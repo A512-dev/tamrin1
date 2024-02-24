@@ -1,5 +1,6 @@
 package com.company;
 
+import logic.CLI;
 import logic.College;
 import logic.Course;
 import logic.CourseType;
@@ -57,6 +58,10 @@ public class Main {
         Finance.CollegeCourses.add(FinanceC1);
         Finance.CollegeCourses.add(FinanceC2);
         Finance.CollegeCourses.add(FinanceC3);
+
+
+
+        CLI cli = new CLI();
 
 
 	// write your code here
