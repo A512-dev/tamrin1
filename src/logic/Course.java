@@ -7,7 +7,7 @@ public class Course {
     private int courseSize;
     private String courseExamTime;
     private String courseTime;
-    CourseType courseType;
+    private CourseType courseType;
     private College collegeType;
 
     public Course(String courseTeacher, int courseCode, int courseCapacity, int courseSize, String courseExamTime, String courseTime, CourseType courseType, College collegeType) {
