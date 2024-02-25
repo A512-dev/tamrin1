@@ -9,6 +9,7 @@ public class Course {
      String courseTime;
      CourseType courseType;
      College collegeType;
+     int courseCurrentCapacity;
 
     public Course(String Name,String courseTeacher, int courseCode, int courseCapacity, int courseSize, String courseExamTime, String courseTime, CourseType courseType, College collegeType) {
         this.courseTeacher = courseTeacher;
@@ -23,7 +24,7 @@ public class Course {
     }
     public void printInfo()
     {
-        System.out.println(this.courseName + " "+ this.courseTeacher+" "+ courseTime+" "+courseExamTime+" "+courseCapacity+" "+courseSize+" "+courseType+" "+courseCode);
+        System.out.println(this.courseName + " "+ this.courseTeacher+" "+ courseTime+" "+courseExamTime+" "+courseCapacity+" "+courseSize+" "+courseType+" "+courseCode+" "+courseCurrentCapacity);
     }
     //String information = this.courseName + " "+ this.courseTeacher+" "+ courseTime+" "+courseExamTime+" "+courseCapacity+" "+courseSize+" "+courseType+" "+courseCode;
 }
