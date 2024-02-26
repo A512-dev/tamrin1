@@ -32,12 +32,12 @@ public class DataBase {
         Math.CollegeCourses.add(mathC1);
         Math.CollegeCourses.add(mathC2);
         Math.CollegeCourses.add(mathC3);
-        Course PhysicsC1 = new Course("p1","teacher201",201,20,4,"24/4"
-                ,"sunday1", CourseType.Exclusive,Physics);
-        Course PhysicsC2 = new Course("p2","teacher202",202,20,4,"24/5"
-                ,"sunday2", CourseType.Exclusive,Physics);
-        Course PhysicsC3 = new Course("p3","teacher203",203,20,4,"24/6"
-                ,"sunday3", CourseType.General,Physics);
+        Course PhysicsC1 = new Course("p1","teacher201",201,20,4,"25/4"
+                ,"monday1", CourseType.Exclusive,Physics);
+        Course PhysicsC2 = new Course("p2","teacher202",202,20,4,"25/5"
+                ,"monday2", CourseType.Exclusive,Physics);
+        Course PhysicsC3 = new Course("p3","teacher203",203,20,4,"25/6"
+                ,"monday3", CourseType.General,Physics);
         Physics.CollegeCourses.add(PhysicsC1);
         Physics.CollegeCourses.add(PhysicsC2);
         Physics.CollegeCourses.add(PhysicsC3);
