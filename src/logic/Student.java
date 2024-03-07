@@ -7,5 +7,11 @@ public class Student {
      int numVahed;
      int numVahedGeneral;
      int studentCode;
+     public void printInfoStudents()
+     {
+         System.out.println(numVahed+" "+numVahedGeneral+" "+studentCode);
+         for (int i=0; i<StudentCourses.size(); i++)
+             StudentCourses.get(i).printInfo();
+     }
 
 }

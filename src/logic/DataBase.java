@@ -7,17 +7,13 @@ import java.util.List;
 public class DataBase {
 
      ArrayList<Student> students = new ArrayList<>();
-     ArrayList<Integer> Codes = new ArrayList<>();
+     ArrayList<Integer> studentsCodes = new ArrayList<>();
+    ArrayList<Integer> coursesCodes = new ArrayList<>();
     College Math = new College();
     College Physics = new College();
     College Chemistry = new College();
     College Law = new College();
     College Finance = new College();
-    public ArrayList<Course> mathCourses = new ArrayList<>();
-    public ArrayList<Course> physicsCourses = new ArrayList<>();
-    public ArrayList<Course> chemistryCourses = new ArrayList<>();
-    public ArrayList<Course> lawCourses = new ArrayList<>();
-    public ArrayList<Course> financeCourses = new ArrayList<>();
     //private Storage storage = new Storage();
     private Student loggedInUser;
 
@@ -29,6 +25,9 @@ public class DataBase {
                 ,"sunday2", CourseType.Exclusive,Math);
         Course mathC3 = new Course("m3","teacher103",103,20,4,"24/6"
                 ,"sunday3", CourseType.General,Math);
+        coursesCodes.add(101);
+        coursesCodes.add(102);
+        coursesCodes.add(103);
         Math.CollegeCourses.add(mathC1);
         Math.CollegeCourses.add(mathC2);
         Math.CollegeCourses.add(mathC3);
@@ -41,6 +40,9 @@ public class DataBase {
         Physics.CollegeCourses.add(PhysicsC1);
         Physics.CollegeCourses.add(PhysicsC2);
         Physics.CollegeCourses.add(PhysicsC3);
+        coursesCodes.add(201);
+        coursesCodes.add(202);
+        coursesCodes.add(203);
         Course ChemistryC1 = new Course("c1","teacher301",301,20,4,"24/4"
                 ,"sunday1", CourseType.Exclusive,Chemistry);
         Course ChemistryC2 = new Course("c2","teacher302",302,20,4,"24/5"
@@ -50,6 +52,9 @@ public class DataBase {
         Chemistry.CollegeCourses.add(ChemistryC1);
         Chemistry.CollegeCourses.add(ChemistryC2);
         Chemistry.CollegeCourses.add(ChemistryC3);
+        coursesCodes.add(301);
+        coursesCodes.add(302);
+        coursesCodes.add(303);
         Course LawC1 = new Course("l1","teacher401",401,20,4,"24/4"
                 ,"sunday1", CourseType.Exclusive,Chemistry);
         Course LawC2 = new Course("l2","teacher402",402,20,4,"24/5"
@@ -59,6 +64,9 @@ public class DataBase {
         Law.CollegeCourses.add(LawC1);
         Law.CollegeCourses.add(LawC2);
         Law.CollegeCourses.add(LawC3);
+        coursesCodes.add(401);
+        coursesCodes.add(402);
+        coursesCodes.add(403);
         Course FinanceC1 = new Course("f1","teacher501",501,20,4,"24/4"
                 ,"sunday1", CourseType.Exclusive,Finance);
         Course FinanceC2 = new Course("f2","teacher502",502,20,4,"24/5"
@@ -68,6 +76,9 @@ public class DataBase {
         Finance.CollegeCourses.add(FinanceC1);
         Finance.CollegeCourses.add(FinanceC2);
         Finance.CollegeCourses.add(FinanceC3);
+        coursesCodes.add(501);
+        coursesCodes.add(502);
+        coursesCodes.add(503);
     }
     public ArrayList<Student> getStudents() {
         return students;
@@ -79,13 +90,5 @@ public class DataBase {
 
     public void setLoggedInUser(Student loggedInUser) {
         this.loggedInUser = loggedInUser;
-    }
-
-    public ArrayList<Integer> getCodes() {
-        return Codes;
-    }
-
-    public void setCodes(ArrayList<Integer> codes) {
-        Codes = codes;
     }
 }
