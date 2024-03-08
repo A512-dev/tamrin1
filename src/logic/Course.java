@@ -28,7 +28,15 @@ public class Course {
     }
     public void printInfo()
     {
-        System.out.println(this.courseName + " "+ this.courseTeacher+" "+ courseTime+" "+courseExamTime+" "+courseCapacity+" "+courseSize+" "+courseType+" "+courseCode+" "+courseCurrentCapacity);
+        System.out.println("name:"+this.courseName +" "+
+                        "Teacher:" + this.courseTeacher+" "+
+                        "Time:"+courseTime+" "+
+                        "Exam time:"+ courseExamTime+" "+
+                        "Capacity:"+ courseCapacity+" "+
+                        "Size:"+courseSize+" "+
+                        "Course Type:"+courseType+" "+
+                        "Code:"+courseCode+" "+
+                        "Remaining Capacity:"+(courseCapacity-courseCurrentCapacity));
     }
     //String information = this.courseName + " "+ this.courseTeacher+" "+ courseTime+" "+courseExamTime+" "+courseCapacity+" "+courseSize+" "+courseType+" "+courseCode;
 }

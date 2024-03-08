@@ -9,9 +9,9 @@ public class Student {
      int studentCode;
      public void printInfoStudents()
      {
-         System.out.println(numVahed+" "+numVahedGeneral+" "+studentCode);
-         for (int i=0; i<StudentCourses.size(); i++)
-             StudentCourses.get(i).printInfo();
+         System.out.println("num vahed:"+numVahed+" num Vahed General:"+numVahedGeneral+" student Code:"+studentCode);
+         //for (int i=0; i<StudentCourses.size(); i++)
+         //    StudentCourses.get(i).printInfo();
      }
 
 }
