@@ -11,6 +11,7 @@ public class CLI {
                 System.out.println("the course you're trying to take has time interference");
                 return true;
             }
+
         }
         return false;
 
